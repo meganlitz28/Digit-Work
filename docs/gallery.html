@@ -1,78 +1,45 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+   
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
+       
         <title>Starter HTML</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <style>
-            body {
-                background: #2db0b4;
-            }
-            
-            ul{ color: white;
-            }
-            ol{ color: white;
-            }
-          </style>
+        
+     
     </head>
     <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-       
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <h1>Gallery</h1>
+        
         <nav class="list">
-            <ul> 
+            <ul class="list"> 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
         
-        <h1>Beginning HTML Site</h1>
-        <img src="../../../beetlejuice-2-2024-logo-png_seeklogo-550437.png" alt="beetlejuice logo" width="300" height="200"/>
-        <p>Here is some sample HTML to look at. This is a body paragraph with some
-                <strong>inline</strong> code to feature some text. Here is <a
-                href="https://behrend.psu.edu/penn-state-behrend">a link to an external
-            website</a>.</p>
-        <p>One of the best resources for learning HTML is <a href="https://www.w3schools.com/html/default.asp">w3Schools</a>. 
-            Here is a reference for <a href="https://htmlcolorcodes.com/">color codes you can use for styling</a>.</p>
-        <p>Each p element is a <strong>block</strong> element designed to make a block on the
-            page.</p>
-        <h2>What are block elements good for?</h2>
-        <p>The next element after this is a ol, or <q>ordered list</q>. It makes a bulleted list.</p>
-        <ol>
-            <li>headings</li>
-            <li>paragraphs</li>
-            <li>lists</li>
-            <li>tables</li>
-            <li>images</li>
-        </ol>
+        <section class="flex">
         
-        <p>How about we look at an ul element, or <q>unordered</q> list? The code looks very similar to the <q>unordered</q> list. 
-            You have to see the difference by viewing in a web browser.</p>
-        <ul>
-            <li>morning</li>
-            <li>noon</li>
-            <li>afternoon</li>
-            <li>evening</li>
-            <li>night</li>
-        </ul>
-        <figure>
-            <img src="../../23-24-PJH-Tix-web-banners-400x540-Beetlejuice-83a923b168.png" width="300" height="200"/>
+        <figure class="DearData">
+            <img src="../../../../../Downloads/1727498566.3701138.jpg" width="2000" />  
+            <figcaption>My Dear Data Report</figcaption>
+        </figure>
+        
+            <figure class="photo1">
+                <img src="../../../../photography/10%2011%2022/DSC_0045.JPG" width="2000"/>
+                <figcaption>A beautiful fall tree</figcaption> 
+            </figure>
             
-            
-            <figcaption>A photo of the Beetlejuice movie</figcaption>
-          
-        </figure> 
-    </body>
+            <figure class="photo2">
+                <img src="../../../../photography/3%205%2023/DSC_0034.JPG" width="2000"/>
+                <figcaption>A photo of a beaver hut</figcaption> 
+            </figure>
+        
+        </section>
+    </body>        
+
+    
 </html>
